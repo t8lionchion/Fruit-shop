@@ -7,7 +7,7 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Contact</title>
+	<title>聯絡資訊</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
@@ -50,46 +50,28 @@
 					<div class="main-menu-wrap">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="index.html">
-								<img src="assets/img/logoicon.png" alt="">
+							<a href="home.html">
+								<img src="/assets/img/logoicon.png" alt="">
 							</a>
 						</div>
 						<!-- logo -->
 
-						<!-- menu start -->
+						<!-- 所有清單 -->
 						<nav class="main-menu">
+							<!-- 桌機板清單 -->
 							<ul>
-								<li class="current-list-item"><a href="home.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
-									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
-										<li><a href="shop.html">Shop</a></li>
-									</ul>
+								<li ><a href="home.html">首頁</a></li>
+								<li><a href="about.html">我們的理念</a></li>
+								<li><a href="news.html">水果新鮮報</a>
 								</li>
-								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
-									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
-								</li>
+								<li class="current-list-item"><a href="contact.html">聯絡資訊</a></li>
+								<li><a href="shop.html">購物專區</a></li>
+								<!-- 購物車和搜尋 -->
 								<li>
 									<div class="header-icons">
+										<!-- 購物車 -->
 										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<!-- 搜尋部分 -->
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 									</div>
 								</li>
@@ -113,8 +95,8 @@
 					<span class="close-btn"><i class="fas fa-window-close"></i></span>
 					<div class="search-bar">
 						<div class="search-bar-tablecell">
-							<h3>Search For:</h3>
-							<input type="text" placeholder="Keywords">
+							<h3>搜尋商品</h3>
+							<input type="text" placeholder="搜尋想買的水果" class="custom-input">
 							<button type="submit">Search <i class="fas fa-search"></i></button>
 						</div>
 					</div>
@@ -130,8 +112,8 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Get 24/7 Support</p>
-						<h1>Contact us</h1>
+						<p>24 小時線上支援</p>
+						<h1>聯絡我們</h1>
 					</div>
 				</div>
 			</div>
@@ -145,39 +127,39 @@
 			<div class="row">
 				<div class="col-lg-8 mb-5 mb-lg-0">
 					<div class="form-title">
-						<h2>Have you any question?</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ratione! Laboriosam est, assumenda. Perferendis, quo alias quaerat aliquid. Corporis ipsum minus voluptate? Dolore, esse natus!</p>
+						<h2>讓我們幫助您！</h2>
+						<p>如有任何訂單、配送、產品相關問題，歡迎填寫下方表單與我們聯繫，我們將在 24 小時內回覆您。</p>
 					</div>
 				 	<div id="form_status"></div>
 					<div class="contact-form">
 						<form type="POST" id="fruitkha-contact" onSubmit="return valid_datas( this );">
 							<p>
-								<input type="text" placeholder="Name" name="name" id="name">
+								<input type="text" placeholder="名字" name="name" id="name">
 								<input type="email" placeholder="Email" name="email" id="email">
 							</p>
 							<p>
-								<input type="tel" placeholder="Phone" name="phone" id="phone">
-								<input type="text" placeholder="Subject" name="subject" id="subject">
+								<input type="tel" placeholder="電話號碼" name="phone" id="phone">
+								<input type="text" placeholder="您的問題" name="subject" id="subject">
 							</p>
-							<p><textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea></p>
+							<p><textarea name="message" id="message" cols="30" rows="10" placeholder="描述"></textarea></p>
 							<input type="hidden" name="token" value="FsWga4&@f6aw" />
-							<p><input type="submit" value="Submit"></p>
+							<p><input type="submit" value="發送"></p>
 						</form>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="contact-form-wrap">
 						<div class="contact-form-box">
-							<h4><i class="fas fa-map"></i> Shop Address</h4>
-							<p>34/8, East Hukupara <br> Gifirtok, Sadan. <br> Country Name</p>
+							<h4><i class="fas fa-map"></i> 商店地址</h4>
+							<p>新北市  板橋區 <br> 文化路一段 123 號 1樓之4</p>
 						</div>
 						<div class="contact-form-box">
-							<h4><i class="far fa-clock"></i> Shop Hours</h4>
-							<p>MON - FRIDAY: 8 to 9 PM <br> SAT - SUN: 10 to 8 PM </p>
+							<h4><i class="far fa-clock"></i> 營業時間</h4>
+							<p>平日: 早上 8點 到 下午9點  <br> 假日: 早上10 到 下午8點  </p>
 						</div>
 						<div class="contact-form-box">
-							<h4><i class="fas fa-address-book"></i> Contact</h4>
-							<p>Phone: +00 111 222 3333 <br> Email: support@fruitkha.com</p>
+							<h4><i class="fas fa-address-book"></i> 聯絡資訊</h4>
+							<p>電話號碼: 02-2258-5864 <br> Email: tygfuidseujzx@gmail.com</p>
 						</div>
 					</div>
 				</div>
@@ -186,63 +168,37 @@
 	</div>
 	<!-- end contact form -->
 
-	<!-- find our location -->
-	<div class="find-location blue-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<p> <i class="fas fa-map-marker-alt"></i> Find Our Location</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end find our location -->
-
-	<!-- google map section -->
-	<div class="embed-responsive embed-responsive-21by9">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26432.42324808999!2d-118.34398767954286!3d34.09378509738966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bf07045279bf%3A0xf67a9a6797bdfae4!2sHollywood%2C%20Los%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1576846473265!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="embed-responsive-item"></iframe>
-	</div>
-	<!-- end google map section -->
-
+	
 
 	<!-- footer -->
 	<div class="footer-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-4 col-md-6">
 					<div class="footer-box about-widget">
-						<h2 class="widget-title">About us</h2>
-						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+						<h2 class="widget-title">我們的理念</h2>
+						<p>
+							我們相信，好的水果源自對土地的尊重與用心，只挑選當季、天然、無毒的優質農作，讓每一口都吃得安心、健康。
+						</p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-4 col-md-6">
 					<div class="footer-box get-in-touch">
-						<h2 class="widget-title">Get in Touch</h2>
+						<h2 class="widget-title">聯絡我們</h2>
 						<ul>
-							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-							<li>support@fruitkha.com</li>
-							<li>+00 111 222 3333</li>
+							<li>地址:新北市板橋區文化路一段 123 號 1樓之4</li>
+							<li>信箱:tygfuidseujzx@gmail.com</li>
+							<li>電話:02-2258-5864</li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-box pages">
-						<h2 class="widget-title">Pages</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
-							<li><a href="news.html">News</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
+				
+				<div class="col-lg-4 col-md-6">
 					<div class="footer-box subscribe">
-						<h2 class="widget-title">Subscribe</h2>
-						<p>Subscribe to our mailing list to get the latest updates.</p>
-						<form action="index.html">
-							<input type="email" placeholder="Email">
+						<h2 class="widget-title">訂閱水果新鮮報</h2>
+						<p>第一時間收到季節水果、限時優惠與最新消息 🍓</p>
+						<form action="home.html">
+							<input type="email" placeholder="請輸入您的Email">
 							<button type="submit"><i class="fas fa-paper-plane"></i></button>
 						</form>
 					</div>
@@ -257,25 +213,24 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
-						Distributed By - <a href="https://themewagon.com/">Themewagon</a>
+					<p>
+						Copyrights &copy;  2025 蔡氏水果．此網站為練習用非營利作品
 					</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">
 						<ul>
-							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100003778222611" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/t8lionchion/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.youtube.com/@%E9%A2%A8%E9%9B%AA%E5%A4%9C%E6%9C%88" target="_blank"><i class="fab fa-youtube"></i></a></li>
+							<li><a href="https://github.com/t8lionchion?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end copyright -->
+	
 	
 	<!-- jquery -->
 	<script src="assets/js/jquery-1.11.3.min.js"></script>

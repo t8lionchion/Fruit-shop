@@ -7,7 +7,7 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Cart</title>
+	<title>購物車</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
@@ -50,46 +50,28 @@
 					<div class="main-menu-wrap">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="index.html">
-								<img src="assets/img/logoicon.png" alt="">
+							<a href="home.html">
+								<img src="/assets/img/logoicon.png" alt="">
 							</a>
 						</div>
 						<!-- logo -->
 
-						<!-- menu start -->
+						<!-- 所有清單 -->
 						<nav class="main-menu">
+							<!-- 桌機板清單 -->
 							<ul>
-								<li class="current-list-item"><a href="home.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
-									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
-										<li><a href="shop.html">Shop</a></li>
-									</ul>
+								<li ><a href="home.html">首頁</a></li>
+								<li><a href="about.html">我們的理念</a></li>
+								<li><a href="news.html">水果新鮮報</a>
 								</li>
-								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
-									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
-								</li>
+								<li><a href="contact.html">聯絡資訊</a></li>
+								<li><a href="shop.html">購物專區</a></li>
+								<!-- 購物車和搜尋 -->
 								<li>
 									<div class="header-icons">
+										<!-- 購物車 -->
 										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<!-- 搜尋部分 -->
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 									</div>
 								</li>
@@ -113,8 +95,8 @@
 					<span class="close-btn"><i class="fas fa-window-close"></i></span>
 					<div class="search-bar">
 						<div class="search-bar-tablecell">
-							<h3>Search For:</h3>
-							<input type="text" placeholder="Keywords">
+							<h3>搜尋商品</h3>
+							<input type="text" placeholder="搜尋想買的水果" class="custom-input">
 							<button type="submit">Search <i class="fas fa-search"></i></button>
 						</div>
 					</div>
@@ -130,8 +112,8 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Fresh and Organic</p>
-						<h1>Cart</h1>
+						<p>您的</p>
+						<h1>購物車</h1>
 					</div>
 				</div>
 			</div>
@@ -149,34 +131,34 @@
 							<thead class="cart-table-head">
 								<tr class="table-head-row">
 									<th class="product-remove"></th>
-									<th class="product-image">Product Image</th>
-									<th class="product-name">Name</th>
-									<th class="product-price">Price</th>
-									<th class="product-quantity">Quantity</th>
-									<th class="product-total">Total</th>
+									<th class="product-image">商品照片</th>
+									<th class="product-name">商品名稱</th>
+									<th class="product-price">價格</th>
+									<th class="product-quantity">數量</th>
+									<th class="product-total">總數量</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr class="table-body-row">
 									<td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a></td>
 									<td class="product-image"><img src="assets/img/products/product-img-1.jpg" alt=""></td>
-									<td class="product-name">Strawberry</td>
-									<td class="product-price">$85</td>
+									<td class="product-name">草莓</td>
+									<td class="product-price">220元</td>
 									<td class="product-quantity"><input type="number" placeholder="0"></td>
 									<td class="product-total">1</td>
 								</tr>
 								<tr class="table-body-row">
 									<td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a></td>
 									<td class="product-image"><img src="assets/img/products/product-img-2.jpg" alt=""></td>
-									<td class="product-name">Berry</td>
-									<td class="product-price">$70</td>
+									<td class="product-name">葡萄</td>
+									<td class="product-price">120元</td>
 									<td class="product-quantity"><input type="number" placeholder="0"></td>
 									<td class="product-total">1</td>
 								</tr>
 								<tr class="table-body-row">
 									<td class="product-remove"><a href="#"><i class="far fa-window-close"></i></a></td>
 									<td class="product-image"><img src="assets/img/products/product-img-3.jpg" alt=""></td>
-									<td class="product-name">Lemon</td>
+									<td class="product-name">檸檬</td>
 									<td class="product-price">$35</td>
 									<td class="product-quantity"><input type="number" placeholder="0"></td>
 									<td class="product-total">1</td>
@@ -191,38 +173,28 @@
 						<table class="total-table">
 							<thead class="total-table-head">
 								<tr class="table-total-row">
-									<th>Total</th>
-									<th>Price</th>
+									<th>全部</th>
+									<th>金額</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr class="total-data">
-									<td><strong>Subtotal: </strong></td>
-									<td>$500</td>
+									<td><strong>商品金額 </strong></td>
+									<td>375元</td>
 								</tr>
 								<tr class="total-data">
-									<td><strong>Shipping: </strong></td>
-									<td>$45</td>
+									<td><strong>運費 </strong></td>
+									<td>60元</td>
 								</tr>
 								<tr class="total-data">
-									<td><strong>Total: </strong></td>
-									<td>$545</td>
+									<td><strong>總金額 </strong></td>
+									<td>435元</td>
 								</tr>
 							</tbody>
 						</table>
 						<div class="cart-buttons">
-							<a href="cart.html" class="boxed-btn">Update Cart</a>
-							<a href="checkout.html" class="boxed-btn black">Check Out</a>
-						</div>
-					</div>
-
-					<div class="coupon-section">
-						<h3>Apply Coupon</h3>
-						<div class="coupon-form-wrap">
-							<form action="index.html">
-								<p><input type="text" placeholder="Coupon"></p>
-								<p><input type="submit" value="Apply"></p>
-							</form>
+							
+							<a href="checkout.html" class="boxed-btn black">送出</a>
 						</div>
 					</div>
 				</div>

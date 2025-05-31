@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+	<meta name="description"
+		content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
 	<title>Check Out</title>
@@ -32,16 +34,17 @@
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
+
 <body>
-	
+
 	<!--PreLoader-->
-    <div class="loader">
-        <div class="loader-inner">
-            <div class="circle"></div>
-        </div>
-    </div>
-    <!--PreLoader Ends-->
-	
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="circle"></div>
+		</div>
+	</div>
+	<!--PreLoader Ends-->
+
 	<!-- header -->
 	<div class="top-header-area" id="sticker">
 		<div class="container">
@@ -50,47 +53,31 @@
 					<div class="main-menu-wrap">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="index.html">
-								<img src="assets/img/logoicon.png" alt="">
+							<a href="home.html">
+								<img src="/assets/img/logoicon.png" alt="">
 							</a>
 						</div>
 						<!-- logo -->
 
-						<!-- menu start -->
+						<!-- 所有清單 -->
 						<nav class="main-menu">
+							<!-- 桌機板清單 -->
 							<ul>
-								<li class="current-list-item"><a href="home.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
-									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
-										<li><a href="shop.html">Shop</a></li>
-									</ul>
+								<li><a href="home.html">首頁</a></li>
+								<li><a href="about.html">我們的理念</a></li>
+								<li><a href="news.html">水果新鮮報</a>
 								</li>
-								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="shop.html">Shop</a>
-									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
-								</li>
+								<li><a href="contact.html">聯絡資訊</a></li>
+								<li><a href="shop.html">購物專區</a></li>
+								<!-- 購物車和搜尋 -->
 								<li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+										<!-- 購物車 -->
+										<a class="shopping-cart" href="cart.html"><i
+												class="fas fa-shopping-cart"></i></a>
+										<!-- 搜尋部分 -->
+										<a class="mobile-hide search-bar-icon" href="#"><i
+												class="fas fa-search"></i></a>
 									</div>
 								</li>
 							</ul>
@@ -113,8 +100,8 @@
 					<span class="close-btn"><i class="fas fa-window-close"></i></span>
 					<div class="search-bar">
 						<div class="search-bar-tablecell">
-							<h3>Search For:</h3>
-							<input type="text" placeholder="Keywords">
+							<h3>搜尋商品</h3>
+							<input type="text" placeholder="搜尋想買的水果" class="custom-input">
 							<button type="submit">Search <i class="fas fa-search"></i></button>
 						</div>
 					</div>
@@ -123,7 +110,7 @@
 		</div>
 	</div>
 	<!-- end search arewa -->
-	
+
 	<!-- breadcrumb-section -->
 	<div class="breadcrumb-section breadcrumb-bg">
 		<div class="container">
@@ -143,185 +130,169 @@
 	<div class="checkout-section mt-150 mb-150">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8">
+				<div class="col-lg-12">
 					<div class="checkout-accordion-wrap">
 						<div class="accordion" id="accordionExample">
-						  <div class="card single-accordion">
-						    <div class="card-header" id="headingOne">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          Billing Address
-						        </button>
-						      </h5>
-						    </div>
+							<div class="card single-accordion">
 
-						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-						      <div class="card-body">
-						        <div class="billing-address-form">
-						        	<form action="index.html">
-						        		<p><input type="text" placeholder="Name"></p>
-						        		<p><input type="email" placeholder="Email"></p>
-						        		<p><input type="text" placeholder="Address"></p>
-						        		<p><input type="tel" placeholder="Phone"></p>
-						        		<p><textarea name="bill" id="bill" cols="30" rows="10" placeholder="Say Something"></textarea></p>
-						        	</form>
-						        </div>
-						      </div>
-						    </div>
-						  </div>
-						  <div class="card single-accordion">
-						    <div class="card-header" id="headingTwo">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						          Shipping Address
-						        </button>
-						      </h5>
-						    </div>
-						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						      <div class="card-body">
-						        <div class="shipping-address-form">
-						        	<p>Your shipping address form is here.</p>
-						        </div>
-						      </div>
-						    </div>
-						  </div>
-						  <div class="card single-accordion">
-						    <div class="card-header" id="headingThree">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						          Card Details
-						        </button>
-						      </h5>
-						    </div>
-						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						      <div class="card-body">
-						        <div class="card-details">
-						        	<p>Your card details goes here.</p>
-						        </div>
-						      </div>
-						    </div>
-						  </div>
+								<div class="card-header" id="headingOne">
+									<h5 class="mb-0">
+										<button class="btn btn-link" type="button" data-toggle="collapse"
+											data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											買家資訊
+										</button>
+									</h5>
+								</div>
+
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+									data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="billing-address-form">
+											<form action="index.html">
+												<p><input type="text" placeholder="名字"></p>
+												<p><input type="email" placeholder="Email"></p>
+												<p><input type="text" placeholder="地址"></p>
+												<p><input type="tel" placeholder="電話號碼"></p>
+												<p><textarea name="bill" id="bill" cols="30" rows="10"
+														placeholder="想和我們說的"></textarea></p>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card single-accordion">
+								<div class="card-header" id="headingTwo">
+									<h5 class="mb-0">
+										<button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+											data-target="#collapseTwo" aria-expanded="false"
+											aria-controls="collapseTwo">
+											付款方式
+										</button>
+									</h5>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+									data-parent="#accordionExample">
+									<div class="card-body">
+										<div class="shipping-address-form">
+											<p>請選擇付款方式：</p>
+
+											<!-- 付款選擇 -->
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="paymentMethod"
+													id="linePay" value="linePay">
+												<label class="form-check-label" for="linePay">Line Pay</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="paymentMethod"
+													id="cod" value="cod">
+												<label class="form-check-label" for="cod">貨到付款</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="paymentMethod"
+													id="creditCard" value="creditCard" checked>
+												<label class="form-check-label" for="creditCard">信用卡付款</label>
+											</div>
+
+
+											<!-- 信用卡欄位 -->
+											<div class="mt-3 payment-info" id="creditCardInfo">
+												<div class="form-group">
+													<label for="cardNumber">信用卡號</label>
+													<input type="text" class="form-control" id="cardNumber"
+														placeholder="請輸入卡號">
+												</div>
+												<div class="form-group">
+													<label for="cardName">持卡人姓名</label>
+													<input type="text" class="form-control" id="cardName"
+														placeholder="請輸入姓名">
+												</div>
+												<div class="form-row">
+													<div class="form-group col">
+														<label for="expiryDate">有效期限</label>
+														<input type="text" class="form-control" id="expiryDate"
+															placeholder="MM/YY">
+													</div>
+													<div class="form-group col">
+														<label for="cvv">安全碼</label>
+														<input type="password" class="form-control" id="cvv"
+															placeholder="CVV">
+													</div>
+												</div>
+											</div>
+
+											<!-- Line Pay 提示 -->
+											<div class="mt-3 payment-info d-none" id="linePayInfo">
+												<p>完成訂單後，請掃描 QR Code 付款或點擊付款連結。</p>
+												<img src="#" alt="Line Pay QR" width="150">
+											</div>
+
+											<!-- 貨到付款備註 -->
+											<div class="mt-3 payment-info d-none" id="codInfo">
+												<div class="form-group">
+													<label for="codNote">備註</label>
+													<textarea class="form-control" id="codNote" rows="2"
+														placeholder="例如：請司機先打電話"></textarea>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<!-- 送出訂單按鈕 -->
+						<div class="row mt-4">
+							<div class="col-12">
+								<button id="submitOrderBtn" class="btn btn-primary btn-lg btn-block py-3 px-5"
+									style="font-size: 1.5rem;">
+									送出訂單
+								</button>
+							</div>
 						</div>
 
+
+
 					</div>
 				</div>
 
-				<div class="col-lg-4">
-					<div class="order-details-wrap">
-						<table class="order-details">
-							<thead>
-								<tr>
-									<th>Your order Details</th>
-									<th>Price</th>
-								</tr>
-							</thead>
-							<tbody class="order-details-body">
-								<tr>
-									<td>Product</td>
-									<td>Total</td>
-								</tr>
-								<tr>
-									<td>Strawberry</td>
-									<td>$85.00</td>
-								</tr>
-								<tr>
-									<td>Berry</td>
-									<td>$70.00</td>
-								</tr>
-								<tr>
-									<td>Lemon</td>
-									<td>$35.00</td>
-								</tr>
-							</tbody>
-							<tbody class="checkout-details">
-								<tr>
-									<td>Subtotal</td>
-									<td>$190</td>
-								</tr>
-								<tr>
-									<td>Shipping</td>
-									<td>$50</td>
-								</tr>
-								<tr>
-									<td>Total</td>
-									<td>$240</td>
-								</tr>
-							</tbody>
-						</table>
-						<a href="#" class="boxed-btn">Place Order</a>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</div>
 	<!-- end check out section -->
 
-	<!-- logo carousel -->
-	<div class="logo-carousel-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="logo-carousel-inner">
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/1.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/2.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/3.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/4.png" alt="">
-						</div>
-						<div class="single-logo-item">
-							<img src="assets/img/company-logos/5.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end logo carousel -->
+	
 
 	<!-- footer -->
 	<div class="footer-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-4 col-md-6">
 					<div class="footer-box about-widget">
-						<h2 class="widget-title">About us</h2>
-						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+						<h2 class="widget-title">我們的理念</h2>
+						<p>
+							我們相信，好的水果源自對土地的尊重與用心，只挑選當季、天然、無毒的優質農作，讓每一口都吃得安心、健康。
+						</p>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-4 col-md-6">
 					<div class="footer-box get-in-touch">
-						<h2 class="widget-title">Get in Touch</h2>
+						<h2 class="widget-title">聯絡我們</h2>
 						<ul>
-							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-							<li>support@fruitkha.com</li>
-							<li>+00 111 222 3333</li>
+							<li>地址:新北市板橋區文化路一段 123 號 1樓之4</li>
+							<li>信箱:tygfuidseujzx@gmail.com</li>
+							<li>電話:02-2258-5864</li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="footer-box pages">
-						<h2 class="widget-title">Pages</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Shop</a></li>
-							<li><a href="news.html">News</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
+				
+				<div class="col-lg-4 col-md-6">
 					<div class="footer-box subscribe">
-						<h2 class="widget-title">Subscribe</h2>
-						<p>Subscribe to our mailing list to get the latest updates.</p>
-						<form action="index.html">
-							<input type="email" placeholder="Email">
+						<h2 class="widget-title">訂閱水果新鮮報</h2>
+						<p>第一時間收到季節水果、限時優惠與最新消息 🍓</p>
+						<form action="home.html">
+							<input type="email" placeholder="請輸入您的Email">
 							<button type="submit"><i class="fas fa-paper-plane"></i></button>
 						</form>
 					</div>
@@ -336,18 +307,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
-						Distributed By - <a href="https://themewagon.com/">Themewagon</a>
+					<p>
+						Copyrights &copy;  2025 蔡氏水果．此網站為練習用非營利作品
 					</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">
 						<ul>
-							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100003778222611" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/t8lionchion/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.youtube.com/@%E9%A2%A8%E9%9B%AA%E5%A4%9C%E6%9C%88" target="_blank"><i class="fab fa-youtube"></i></a></li>
+							<li><a href="https://github.com/t8lionchion?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -355,7 +325,7 @@
 		</div>
 	</div>
 	<!-- end copyright -->
-	
+
 	<!-- jquery -->
 	<script src="assets/js/jquery-1.11.3.min.js"></script>
 	<!-- bootstrap -->
@@ -378,4 +348,5 @@
 	<script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
