@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+	<meta name="description"
+		content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
 	<title>首頁</title>
@@ -32,16 +34,17 @@
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
+
 <body>
-	
+
 	<!--PreLoader-->
-    <div class="loader">
-        <div class="loader-inner">
-            <div class="circle"></div>
-        </div>
-    </div>
-    <!--PreLoader Ends-->
-	
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="circle"></div>
+		</div>
+	</div>
+	<!--PreLoader Ends-->
+
 	<!-- header -->
 	<div class="top-header-area" id="sticker">
 		<div class="container">
@@ -70,9 +73,11 @@
 								<li>
 									<div class="header-icons">
 										<!-- 購物車 -->
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="shopping-cart" href="cart.html"><i
+												class="fas fa-shopping-cart"></i></a>
 										<!-- 搜尋部分 -->
-										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+										<a class="mobile-hide search-bar-icon" href="#"><i
+												class="fas fa-search"></i></a>
 									</div>
 								</li>
 							</ul>
@@ -168,10 +173,10 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 	<!-- 功能列表區塊，有免運、服務、退款 -->
-	 <!-- end home page slider -->
+	<!-- end home page slider -->
 	<div class="list-section pt-80 pb-80">
 		<div class="container">
 
@@ -220,7 +225,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
-					<div class="section-title">	
+					<div class="section-title">
 						<h3>我們的產品</h3>
 						<p>我們相信，好水果來自好產地，也來自對品質的堅持。蔡式水果，從產地到餐桌的承諾。</p>
 					</div>
@@ -236,9 +241,15 @@
 						</div>
 						<h3>草莓</h3>
 						<p class="product-price"><span>每斤</span> 220元 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> 加入購物車</a>
+
+						<!-- ✅ 改成 button 並呼叫 addToCart() -->
+						<button class="cart-btn"
+							onclick="addToCart({id: 1, name: '草莓', price: 220, img: 'assets/img/products/product-img-1.jpg'})">
+							<i class="fas fa-shopping-cart"></i> 加入購物車
+						</button>
 					</div>
 				</div>
+
 				<!-- 水果產品卡片2 -->
 				<div class="col-lg-4 col-md-6 text-center">
 					<div class="single-product-item">
@@ -247,9 +258,16 @@
 						</div>
 						<h3>葡萄</h3>
 						<p class="product-price"><span>每斤</span> 120元 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> 加入購物車</a>
+
+						<!-- ✅ 改成 button 並呼叫 addToCart() -->
+						<button class="cart-btn"
+							onclick="addToCart({id: 2, name: '葡萄', price: 120, img: 'assets/img/products/product-img-2.jpg'})">
+							<i class="fas fa-shopping-cart"></i> 加入購物車
+						</button>
 					</div>
 				</div>
+
+				<!-- 水果產品卡片3 -->
 				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
 					<div class="single-product-item">
 						<div class="product-image">
@@ -257,84 +275,93 @@
 						</div>
 						<h3>檸檬</h3>
 						<p class="product-price"><span>每斤</span> 35元 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> 加入購物車</a>
+
+						<!-- ✅ 改成 button 並呼叫 addToCart() -->
+						<button class="cart-btn"
+							onclick="addToCart({id: 3, name: '檸檬', price: 35, img: 'assets/img/products/product-img-3.jpg'})">
+							<i class="fas fa-shopping-cart"></i> 加入購物車
+						</button>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 	<!-- end product section -->
 	<!-- 主打商品區 -->
 	<!-- cart banner section -->
 	<section class="cart-banner pt-100 pb-100">
-    	<div class="container">
-        	<div class="row clearfix">
-            	<!--Image Column-->
-            	<div class="image-column col-lg-6">
-                	<div class="image">
-                    	<div class="price-box">
-                        	<div class="inner-price">
-                                <span class="price">
-                                    <strong>7折</strong> <br> 每斤
-                                </span>
-                            </div>
-                        </div>
-                    	<img src="assets/img/a.jpg" alt="">
-                    </div>
-                </div>
-                <!--Content Column-->
-                <div class="content-column col-lg-6">
+		<div class="container">
+			<div class="row clearfix">
+				<!--Image Column-->
+				<div class="image-column col-lg-6">
+					<div class="image">
+						<div class="price-box">
+							<div class="inner-price">
+								<span class="price">
+									<strong>7折</strong> <br> 每斤
+								</span>
+							</div>
+						</div>
+						<img src="assets/img/a.jpg" alt="">
+					</div>
+				</div>
+				<!--Content Column-->
+				<div class="content-column col-lg-6">
 					<h3><span class="orange-text">本月主打商品</span> </h3>
-                    <h4>大湖草莓甜蜜開賣中</h4>
-                    <div class="text">限量現摘，冬季限定，一口酸甜，錯過等明年！</div>
-                    <!--Countdown Timer-->
-                    <div class="time-counter">
-						<div class="time-countdown clearfix" data-countdown="2025/6/01">
+					<h4>大湖草莓甜蜜開賣中</h4>
+					<div class="text">限量現摘，冬季限定，一口酸甜，錯過等明年！</div>
+					<!--Countdown Timer-->
+					<div class="time-counter">
+						<div class="time-countdown clearfix" data-countdown="2025/6/08">
 							<div class="counter-column">
 								<div class="inner">
-									<span class="count">03</span>天
+									<span class="count">07</span>天
 								</div>
-							</div> 
-						<div class="counter-column">
-							<div class="inner">
-								<span class="count">12</span>時
 							</div>
-						</div>  
-						<div class="counter-column">
-							<div class="inner">
-								<span class="count">48</span>分
+							<div class="counter-column">
+								<div class="inner">
+									<span class="count">12</span>時
+								</div>
 							</div>
-						</div>  
-						<div class="counter-column">
-							<div class="inner">
-								<span class="count">10</span>秒
+							<div class="counter-column">
+								<div class="inner">
+									<span class="count">48</span>分
+								</div>
+							</div>
+							<div class="counter-column">
+								<div class="inner">
+									<span class="count">10</span>秒
+								</div>
 							</div>
 						</div>
 					</div>
-					</div>
-                	<a href="cart.html" class="cart-btn mt-3"><i class="fas fa-shopping-cart"></i> 加入購物車</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end cart banner section -->
+					<button class="cart-btn"
+						onclick="addToCart({id: 1, name: '草莓', price: 220, img: 'assets/img/products/product-img-1.jpg'})">
+						<i class="fas fa-shopping-cart"></i> 加入購物車
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end cart banner section -->
 	<!-- 特價頁面 -->
 	<section class="shop-banner">
-    	<div class="container">
-        	<h3>6月特賣開跑中！ <br> 
+		<div class="container">
+			<h3>6月特賣開跑中！ <br>
 				<span class="orange-text">大優惠</span>
 			</h3>
-            <div class="sale-percent">
-				<span>售價 <br> 只要</span>5折 
+			<div class="sale-percent">
+				<span>售價 <br> 只要</span>5折
 				<span>心動不如馬上行動</span>
 			</div>
-            <a href="shop.html" class="cart-btn btn-lg">加入購物車</a>
-        </div>
-    </section>
+			<button class="cart-btn"
+				onclick="addToCart({id: 1, name: '草莓', price: 220, img: 'assets/img/products/product-img-1.jpg'})">
+				<i class="fas fa-shopping-cart"></i> 加入購物車
+			</button>
+		</div>
+	</section>
 	<!-- end shop banner -->
-
-
-	
 
 	<!-- footer -->
 	<div class="footer-area">
@@ -358,7 +385,7 @@
 						</ul>
 					</div>
 				</div>
-				
+
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-box subscribe">
 						<h2 class="widget-title">訂閱水果新鮮報</h2>
@@ -373,32 +400,36 @@
 		</div>
 	</div>
 	<!-- end footer -->
-	
+
 	<!-- copyright -->
 	<div class="copyright">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
 					<p>
-						Copyrights &copy;  2025 蔡氏水果．此網站為練習用非營利作品
+						Copyrights &copy; 2025 蔡氏水果．此網站為練習用非營利作品
 					</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
 					<div class="social-icons">
 						<ul>
-							<li><a href="https://www.facebook.com/profile.php?id=100003778222611" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="https://www.instagram.com/t8lionchion/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="https://www.youtube.com/@%E9%A2%A8%E9%9B%AA%E5%A4%9C%E6%9C%88" target="_blank"><i class="fab fa-youtube"></i></a></li>
-							<li><a href="https://github.com/t8lionchion?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100003778222611" target="_blank"><i
+										class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/t8lionchion/" target="_blank"><i
+										class="fab fa-instagram"></i></a></li>
+							<li><a href="https://www.youtube.com/@%E9%A2%A8%E9%9B%AA%E5%A4%9C%E6%9C%88"
+									target="_blank"><i class="fab fa-youtube"></i></a></li>
+							<li><a href="https://github.com/t8lionchion?tab=repositories" target="_blank"><i
+										class="fab fa-github"></i></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- end copyright -->
-	
+
 	<!-- jquery -->
 	<script src="assets/js/jquery-1.11.3.min.js"></script>
 	<!-- bootstrap -->
@@ -419,6 +450,8 @@
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/home.js"></script>
 
 </body>
+
 </html>

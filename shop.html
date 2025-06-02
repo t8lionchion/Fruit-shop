@@ -142,41 +142,53 @@
 				<div class="col-lg-4 col-md-6 text-center strawberry">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-1.jpg" alt=""></a>
+							<a href="single-product2.html"><img src="assets/img/products/product-img-1.jpg" alt=""></a>
 						</div>
 						<h3>草莓</h3>
 						<p class="product-price"><span>每斤</span> 220元 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+						<button class="cart-btn"
+							onclick="addToCart({id: 1, name: '草莓', price: 220, img: 'assets/img/products/product-img-1.jpg'})">
+							<i class="fas fa-shopping-cart"></i> 加入購物車
+						</button>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 text-center berry">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-2.jpg" alt=""></a>
+							<a href="grape.html"><img src="assets/img/products/product-img-2.jpg" alt=""></a>
 						</div>
 						<h3>葡萄</h3>
 						<p class="product-price"><span>每斤</span> 120元 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> 加入購物車</a>
+						<button class="cart-btn"
+							onclick="addToCart({id: 2, name: '葡萄', price: 120, img: 'assets/img/products/product-img-2.jpg'})">
+							<i class="fas fa-shopping-cart"></i> 加入購物車
+						</button>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 text-center lemon">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-3.jpg" alt=""></a>
+							<a href="lemon.html"><img src="assets/img/products/product-img-3.jpg" alt=""></a>
 						</div>
 						<h3>檸檬</h3>
 						<p class="product-price"><span>每斤</span> 35元</p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i>加入購物車</a>
+						<button class="cart-btn"
+							onclick="addToCart({id: 3, name: '檸檬', price: 35, img: 'assets/img/products/product-img-3.jpg'})">
+							<i class="fas fa-shopping-cart"></i> 加入購物車
+						</button>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 text-center">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-4.jpg" alt=""></a>
+							<a href="kile.html"><img src="assets/img/products/product-img-4.jpg" alt=""></a>
 						</div>
 						<h3>奇異果</h3>
-						<p class="product-price"><span>5顆</span> 100元 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> 加入購物車</a>
+						<p class="product-price"><span>1顆</span> 20元 </p>
+						<button class="cart-btn"
+							onclick="addToCart({id: 4, name: '奇異果', price: 20, img: 'assets/img/products/product-img-4.jpg'})">
+							<i class="fas fa-shopping-cart"></i> 加入購物車
+						</button>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 text-center">
@@ -186,17 +198,23 @@
 						</div>
 						<h3>青蘋果</h3>
 						<p class="product-price"><span>每顆</span> 100元 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> 加入購物車</a>
+						<button class="cart-btn"
+							onclick="addToCart({id: 5, name: '青蘋果', price: 100, img: 'assets/img/products/product-img-5.jpg'})">
+							<i class="fas fa-shopping-cart"></i> 加入購物車
+						</button>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 text-center strawberry">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="single-product.html"><img src="assets/img/products/product-img-6.jpg" alt=""></a>
+							<a href="raspberry.html"><img src="assets/img/products/product-img-6.jpg" alt=""></a>
 						</div>
 						<h3>覆盆莓</h3>
 						<p class="product-price"><span>1包</span> 139元 </p>
-						<a href="cart.html" class="cart-btn"><i class="fas fa-shopping-cart"></i> 加入購物車</a>
+						<button class="cart-btn"
+							onclick="addToCart({id: 6, name: '覆盆莓', price: 139, img: 'assets/img/products/product-img-6.jpg'})">
+							<i class="fas fa-shopping-cart"></i> 加入購物車
+						</button>
 					</div>
 				</div>
 			</div>
@@ -300,6 +318,7 @@
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/home.js"></script>
 
 </body>
 </html>

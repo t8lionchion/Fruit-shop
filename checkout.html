@@ -149,10 +149,10 @@
 									<div class="card-body">
 										<div class="billing-address-form">
 											<form action="index.html">
-												<p><input type="text" placeholder="名字"></p>
-												<p><input type="email" placeholder="Email"></p>
-												<p><input type="text" placeholder="地址"></p>
-												<p><input type="tel" placeholder="電話號碼"></p>
+												<p><input type="text" placeholder="名字" required></p>
+												<p><input type="email" placeholder="Email" required></p>
+												<p><input type="text" placeholder="地址" required></p>
+												<p><input type="tel" placeholder="電話號碼" required></p>
 												<p><textarea name="bill" id="bill" cols="30" rows="10"
 														placeholder="想和我們說的"></textarea></p>
 											</form>
@@ -184,41 +184,17 @@
 											</div>
 											<div class="form-check">
 												<input class="form-check-input" type="radio" name="paymentMethod"
-													id="cod" value="cod">
+													id="cod" value="貨到付款">
 												<label class="form-check-label" for="cod">貨到付款</label>
 											</div>
 											<div class="form-check">
 												<input class="form-check-input" type="radio" name="paymentMethod"
-													id="creditCard" value="creditCard" checked>
+													id="creditCard" value="信用卡付款" checked>
 												<label class="form-check-label" for="creditCard">信用卡付款</label>
 											</div>
 
 
-											<!-- 信用卡欄位 -->
-											<div class="mt-3 payment-info" id="creditCardInfo">
-												<div class="form-group">
-													<label for="cardNumber">信用卡號</label>
-													<input type="text" class="form-control" id="cardNumber"
-														placeholder="請輸入卡號">
-												</div>
-												<div class="form-group">
-													<label for="cardName">持卡人姓名</label>
-													<input type="text" class="form-control" id="cardName"
-														placeholder="請輸入姓名">
-												</div>
-												<div class="form-row">
-													<div class="form-group col">
-														<label for="expiryDate">有效期限</label>
-														<input type="text" class="form-control" id="expiryDate"
-															placeholder="MM/YY">
-													</div>
-													<div class="form-group col">
-														<label for="cvv">安全碼</label>
-														<input type="password" class="form-control" id="cvv"
-															placeholder="CVV">
-													</div>
-												</div>
-											</div>
+											
 
 											<!-- Line Pay 提示 -->
 											<div class="mt-3 payment-info d-none" id="linePayInfo">
@@ -346,6 +322,7 @@
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/checkout.js"></script>
 
 </body>
 
