@@ -1,8 +1,17 @@
 // --- home.html 中使用的購物車邏輯（加入商品至 localStorage） ---
 
+function generateUUID() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    const r = Math.random() * 16 | 0;
+    const v = (c === 'x') ? r : (r & 0x3 | 0x8);
+    return v.toString(16);
+  });
+}
+
+
 // 每次載入頁面先檢查是否已有訪客 ID
 if (!localStorage.getItem('guest_id')) {
-  const uuid = crypto.randomUUID();
+  const uuid = generateUUID();
   localStorage.setItem('guest_id', uuid);
   localStorage.setItem('cart_items', JSON.stringify([]));
 }
